@@ -1,0 +1,55 @@
+{
+  "name": "assets-man",
+  "version": "1.0.0",
+  "description": "Fixed Assets Management",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "now-build": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alonsod",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.7.2",
+    "@babel/preset-env": "7.7.1",
+    "@babel/preset-react": "7.7.0",
+    "babel-eslint": "10.0.3",
+    "babel-loader": "8.0.6",
+    "html-webpack-plugin": "3.2.0",
+    "prettier": "1.19.1",
+    "standard": "14.3.1",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.9.0"
+  },
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "standard": {
+    "ignore": [
+      "/api/**"
+    ],
+    "parser": "babel-eslint"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ],
+    "plugins": [
+      "eslint-plugin-react"
+    ],
+    "parser": "babel-eslint"
+  }
+}
