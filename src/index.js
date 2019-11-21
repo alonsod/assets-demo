@@ -1,8 +1,7 @@
-// import React from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
+import { App } from './App'
 
-// ReactDOM.render('Hola React!', document.body)
-
-ReactDOM.render('Hola Administración de Activos! ', document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
 
 // console.log('test de compilación')
