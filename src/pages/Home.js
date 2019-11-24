@@ -1,6 +1,6 @@
 import React from 'react'
-import { ListOfCategories } from '../components/ListOfCategories'
-import { ListOfPhotoCards } from '../container/ListOfPhotoCards'
+// import { ListOfCategories } from '../components/ListOfCategories'
+// import { ListOfPhotoCards } from '../container/ListOfPhotoCards'
 import { Layout } from '../components/Layout'
 /**
  * En la versión 14.1 de standard es necesario usar el componente
@@ -10,18 +10,23 @@ import { Layout } from '../components/Layout'
  * @param {*} param0
  */
 
-const HomePage = ({ categoryId }) => {
+export const Home = () => {
   return (
     <Layout
-      title='Tu app de fotos de mascotas'
-      subtitle='Con petgram puedes encontrar fotos de animales domésticos bonitos'
+      title='Ubicaciones'
+      subtitle='Selecciona una ubicación para administrar sus activos'
     >
+      {
+        /*
       <ListOfCategories />
       <ListOfPhotoCards categoryId={categoryId} />
+      */
+      }
     </Layout>
   )
 }
-
+/*
 export const Home = React.memo(HomePage, (prevProps, props) => {
-  return prevProps.categoryId === props.categoryId
+  // return prevProps.categoryId === props.categoryId
 })
+*/
