@@ -23,7 +23,6 @@ export const UserForm = ({ error, disabled, onSubmit, title }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log('!! sera?')
     onSubmit({ email: email.value, password: password.value })
   }
 

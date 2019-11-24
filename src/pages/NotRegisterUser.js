@@ -1,7 +1,7 @@
 import React from 'react'
 import { UserForm } from '../components/UserForm'
 import { navigate } from '@reach/router'
-
+import { Box } from '@chakra-ui/core'
 export const NotRegisterUser = () => {
   console.log('login!')
 
@@ -11,11 +11,11 @@ export const NotRegisterUser = () => {
   }
 
   return (
-
-    <UserForm
-      disabled={false}
-      onSubmit={onSubmit} title='Iniciar Sesión'
-    />
-
+    <Box w='lg' bg='tomato'>
+      <UserForm
+        disabled={false}
+        onSubmit={onSubmit} title='Iniciar Sesión'
+      />
+    </Box>
   )
 }

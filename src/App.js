@@ -1,7 +1,7 @@
 import React from 'react'
 import { Router } from '@reach/router'
 import { NotRegisterUser } from './pages/NotRegisterUser'
-import { Home } from './pages/Home'
+import { Locations } from './pages/Locations'
 import { NotFound } from './pages/NotFound'
 import { ThemeProvider, CSSReset, Flex, Box } from '@chakra-ui/core'
 
@@ -10,13 +10,14 @@ export const App = () => {
     <ThemeProvider>
       <CSSReset />
       <Flex w='100%' justifyContent='center'>
-        <Box w='md' bg='tomato'>
-          <Router>
-            <NotFound default />
-            <NotRegisterUser path='/' />
-            <Home path='/locations' />
-          </Router>
-        </Box>
+
+        <Router>
+          <NotFound default />
+
+          <NotRegisterUser path='/' />
+          <Locations path='/locations' />
+        </Router>
+
       </Flex>
     </ThemeProvider>
   )
