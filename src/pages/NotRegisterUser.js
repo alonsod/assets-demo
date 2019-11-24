@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { UserForm } from '../components/UserForm'
 
 export const NotRegisterUser = () => {
@@ -7,10 +7,10 @@ export const NotRegisterUser = () => {
   }
 
   return (
-    <Fragment key='kay'>
-      <UserForm
-        onSubmit={onSubmit} title='Iniciar Sesión'
-      />
-    </Fragment>
+
+    <UserForm
+      onSubmit={onSubmit} title='Iniciar Sesión'
+    />
+
   )
 }

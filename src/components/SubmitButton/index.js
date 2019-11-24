@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button } from './styles'
+// import { Button } from './styles'
+import { Button } from '@chakra-ui/core'
 import PropTypes from 'prop-types'
 
 export const SubmitButton = ({ children, disabled, onClick }) => {
